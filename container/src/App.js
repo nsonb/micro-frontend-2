@@ -2,7 +2,7 @@ import React from 'react'
 import MarketingApp from './components/MarketingApp'
 
 export default () => {
-  // modifyig
+  // modifyigdasd
   return <div>
     <MarketingApp></MarketingApp>
   </div>
