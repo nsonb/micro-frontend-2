@@ -12,6 +12,7 @@ const generateClassName = createGenerateClassName({
 export default ({history, onSignIn}) => {
   console.log('this is on',onSignIn)
   return (
+    // test deploy auth
    <div>
      <StylesProvider generateClassName={generateClassName}>
        <Router history={history}>
