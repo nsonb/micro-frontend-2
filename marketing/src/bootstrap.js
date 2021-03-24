@@ -5,7 +5,13 @@ import App from './App'
 
 const mount = (el, { onNavigate, defaultHistory }) => {
   const history = defaultHistory || createMemoryHistory()
-  if(onNavigate !== null) history.listen(onNavigate)
+  console.log(defaultHistory)
+  console.log("check null",onNavigate)
+
+  if(onNavigate) { 
+    console.log("does this run")
+    history.listen(onNavigate)
+  }
 
   ReactDOM.render( <App history={history}/>, el)
   return {
