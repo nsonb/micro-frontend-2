@@ -24,7 +24,7 @@ export default () => {
       history.push('/dashboard')
     }
   }, [isSignIn])
-
+  //
   return (
     <StylesProvider generateClassName={generateClassName}>
       <Router history={history}>
